@@ -5,7 +5,7 @@ import"./MyDetails.css"
 
 export default function MyDetails() {
     return (
-        <div className='details'>
+        <div className='details' id="ABOUT">
             <p className='me'>About Me</p>
             <img src={img1} alt="" />
             <p className='mydetails'>

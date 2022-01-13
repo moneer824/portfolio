@@ -10,7 +10,7 @@ export default function ProjectComponents() {
   const project1 = [logo1, logo2, logo3];
 
   return (
-    <div className="all-projects">
+    <div className="all-projects" id="recent-work">
       <p>Recent Work</p>
       <Projects
         title="Pulseplus clone"

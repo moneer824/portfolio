@@ -12,7 +12,7 @@ import SkillComponents from './SkillComponents'
 
 export default function Skills() {
     return (
-        <div className='skills'>
+        <div className='skills' id='SKILLS'>
             <p>Skills and Tools</p>
             <div className="tools">
 

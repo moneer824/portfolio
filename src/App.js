@@ -6,19 +6,17 @@ import Skills from "./components/Skills.js";
 import ProjectComponents from "./components/ProjectComponents.js";
 import Contact from "./components/Contact.js";
 
-
 function App() {
-
   return (
-    <div>
-      <div className="empty"></div>
+    <div id="HOME">
+      <div className="empty"  ></div>
       <div>
         <NavBar />
         <AboutMe />
         <MyDetails />
-        <Skills/>
-      <ProjectComponents/>
-      <Contact/>
+        <Skills />
+        <ProjectComponents />
+        <Contact />
       </div>
     </div>
   );

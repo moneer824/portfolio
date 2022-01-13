@@ -1,0 +1,36 @@
+.skills{
+    padding: 40px;
+    margin: 30px;
+    /* background-image: linear-gradient(-45deg,rgb(15, 179, 40), rgb(135, 235, 217)); */
+    background-size: 200%;
+}
+
+.skills p{
+    font-size: 30px;
+    /* color: white; */
+    text-align: center;
+    font-weight: bold;
+}
+
+.tools{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.skills{
+    margin: 20px;
+    padding: 40px 0;
+  }
+  .tools{
+    gap: 15px;
+    width: 100%;
+  }
+
+}

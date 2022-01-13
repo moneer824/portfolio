@@ -3,9 +3,12 @@ import "./App.css";
 import AboutMe from "./components/AboutMe.js";
 import MyDetails from "./components/MyDetails.js";
 import Skills from "./components/Skills.js";
-import Projects from "./components/Projects.js";
+import ProjectComponents from "./components/ProjectComponents.js";
+import Contact from "./components/Contact.js";
+
 
 function App() {
+
   return (
     <div>
       <div className="empty"></div>
@@ -14,7 +17,8 @@ function App() {
         <AboutMe />
         <MyDetails />
         <Skills/>
-        <Projects/>
+      <ProjectComponents/>
+      <Contact/>
       </div>
     </div>
   );

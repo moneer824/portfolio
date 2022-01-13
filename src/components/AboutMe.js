@@ -12,7 +12,7 @@ export default function AboutMe() {
       <div className="info">
         <p>Hey there!</p>
         <p>I am Moneer Ashraf</p>
-        <button>View CV</button>
+        <button>Connect</button>
         {/* <p>Aspiring full stack web developer at Masai school. Self motivated and curious with a keen interest in building user friendly products. Looking forward to applying technical skills like CSS,MERN and JAVASCRIPT to all the organisations that I offer my services to and help the organisation grow and develop alongside me.</p> */}
       </div>
 

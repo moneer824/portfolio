@@ -1,7 +1,6 @@
 import React from "react";
 import "./Projects.css";
 
-
 export default function Projects(props) {
   return (
     <div className="projects">
@@ -13,14 +12,18 @@ export default function Projects(props) {
         <p>{props.description}</p>
         <p>Tech Stack</p>
         <div className="tech-used">
-      
           {props.arr.map((img) => (
-           <img src={img} alt="" />
+            <img src={img} alt="" />
           ))}
         </div>
         <div className="pro-btn">
-          <button>Preview</button>
-          <button>Code</button>
+          <a target="_blank" rel='noreferrer' href={props.website}>
+            <button>Preview</button>
+          </a>
+
+          <a target="_blank" rel='noreferrer' href={props.github}>
+            <button>Code</button>
+          </a>
         </div>
       </div>
     </div>

@@ -20,12 +20,16 @@ export default function ProjectComponents() {
         title="Pluralsight clone"
         description="Pluralsight is an online learning and workforce development platform that helps businesses and individuals adjust to changing technology. Pluralsight provide products to build tech skills and Get insights into your workflow."
         arr={project1}
+        github="https://github.com/aadityaneve/Clone-Pluralsight"
+        website="https://aadityaneve.github.io/Clone-Pluralsight"
       />
       <Projects
       preview={Sasta}
         title="Sastasundar clone"
         description="Sastasundhar is a Indian website where we can order medicine and Healthcare products. SastaSundar.com is an Innovative Information and Knowledge based web portal that helps people on their path to wellness."
         arr={project1}
+        github="https://github.com/harshpagar/sastabazr"
+        website="https://sastasundhar-clone.netlify.app/"
       />
     </div>
   );

@@ -4,7 +4,7 @@ import"./NavBar.css"
 export default function NavBar() {
     return (
         <nav className='container'>
-           <div className="logo">Portfolio</div>
+           <div className="logo">Moneer</div>
            <input type="checkbox" name="" id="checker" />
            <label htmlFor="checker">
            <i className="fas fa-bars"></i>

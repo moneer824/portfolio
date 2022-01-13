@@ -1,6 +1,9 @@
 import React from "react";
 import Projects from "./Projects.js";
 import "./ProjectComponents.css";
+import Plural from "./Projects-pic/Plural.png";
+import Sasta from "./Projects-pic/Sasta.png";
+
 
 import logo1 from "./skill-logo/html.png";
 import logo2 from "./skill-logo/css.png";
@@ -13,13 +16,15 @@ export default function ProjectComponents() {
     <div className="all-projects" id="recent-work">
       <p>Recent Work</p>
       <Projects
-        title="Pulseplus clone"
-        description="Pulse Pharmacy is a leading Online Pharmacy in India that offers prescription medicines and OTC products all over India. Pulse Pharmacy is to ensure health to all the individuals."
+      preview={Plural}
+        title="Pluralsight clone"
+        description="Pluralsight is an online learning and workforce development platform that helps businesses and individuals adjust to changing technology. Pluralsight provide products to build tech skills and Get insights into your workflow."
         arr={project1}
       />
       <Projects
-        title="Pulseplus clone"
-        description="Pulse Pharmacy is a leading Online Pharmacy in India that offers prescription medicines and OTC products all over India. Pulse Pharmacy is to ensure health to all the individuals."
+      preview={Sasta}
+        title="Sastasundar clone"
+        description="Sastasundhar is a Indian website where we can order medicine and Healthcare products. SastaSundar.com is an Innovative Information and Knowledge based web portal that helps people on their path to wellness."
         arr={project1}
       />
     </div>

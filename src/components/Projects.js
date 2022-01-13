@@ -7,7 +7,7 @@ export default function Projects(props) {
   return (
     <div className="projects">
       <div className="pro-img">
-        <img src={Plural} alt="" />
+        <img src={props.preview} alt="" />
       </div>
       <div className="pro-info">
         <p>{props.title}</p>

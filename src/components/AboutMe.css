@@ -92,6 +92,10 @@
     margin: 20px;
     color: white;
 }
+.info button a{
+ 
+    color: white;
+}
 
 .about p {
   margin: 20px 0;

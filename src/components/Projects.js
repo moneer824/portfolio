@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import Plural from "./Projects-pic/Plural.png";
 
 
 export default function Projects(props) {

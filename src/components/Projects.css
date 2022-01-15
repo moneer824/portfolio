@@ -56,7 +56,6 @@
 }
 .pro-btn button {
   padding: 15px;
-  width: 250px;
   font-size: 20px;
   background-image: linear-gradient(-45deg, blue, rgb(75, 88, 221));
   background-size: 200%;
@@ -67,6 +66,17 @@
   margin: 0 10px;
 }
 
+@media only screen and (max-width: 900px) {
+  .projects {
+    flex-direction: column;
+  }
+  .pro-img {
+    width: 100%;
+  }
+  .pro-info {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .projects {
     flex-direction: column;

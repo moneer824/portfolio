@@ -8,7 +8,7 @@ import Sasta from "./Projects-pic/Sasta.png";
 
 
 export default function ProjectComponents() {
-const project1 = ["fab fa-html5","fab fa-css3-alt","fab fa-js","fab fa-node"]
+const project1 = ["fab fa-html5","fab fa-css3-alt","fab fa-js"]
 const project2 = ["fab fa-html5","fab fa-css3-alt","fab fa-js"]
 
   return (

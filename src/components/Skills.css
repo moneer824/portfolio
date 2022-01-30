@@ -14,14 +14,17 @@
 }
 
 .tools{
-    width: 50%;
+    width: 600px;
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
     margin: 30px auto;
 }
 
+.tools .fab{
+  font-size: 40px;
+}
 
 @media only screen and (max-width: 900px) {
 
@@ -37,7 +40,7 @@
   }
   .tools{
     gap: 15px;
-    width: 100%;
+    width: 300px;
   }
 
 }

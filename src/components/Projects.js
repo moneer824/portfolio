@@ -12,8 +12,8 @@ export default function Projects(props) {
         <p>{props.description}</p>
         <p>Tech Stack</p>
         <div className="tech-used">
-          {props.arr.map((img) => (
-            <img src={img} alt="" />
+          {props.arr.map((e,i) => (
+            <i className={e} key={i}></i>
           ))}
         </div>
         <div className="pro-btn">

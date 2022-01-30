@@ -5,12 +5,11 @@ import Plural from "./Projects-pic/Plural.png";
 import Sasta from "./Projects-pic/Sasta.png";
 
 
-import logo1 from "./skill-logo/html.png";
-import logo2 from "./skill-logo/css.png";
-import logo3 from "./skill-logo/js.png";
+
 
 export default function ProjectComponents() {
-  const project1 = [logo1, logo2, logo3];
+const project1 = ["fab fa-html5","fab fa-css3-alt","fab fa-js","fab fa-node"]
+const project2 = ["fab fa-html5","fab fa-css3-alt","fab fa-js"]
 
   return (
     <div className="all-projects" id="recent-work">
@@ -27,7 +26,7 @@ export default function ProjectComponents() {
       preview={Sasta}
         title="Sastasundar clone"
         description="Sastasundhar is a Indian website where we can order medicine and Healthcare products. SastaSundar.com is an Innovative Information and Knowledge based web portal that helps people on their path to wellness."
-        arr={project1}
+        arr={project2}
         github="https://github.com/harshpagar/sastabazr"
         website="https://sastasundhar-clone.netlify.app/"
       />

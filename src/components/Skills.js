@@ -13,10 +13,9 @@ export default function Skills() {
            <SkillComponents name ="CSS" icon="fab fa-css3-alt"/>
            <SkillComponents name ="js" icon="fab fa-js"/>
            <SkillComponents name ="BOOTSTRAP" icon="fab fa-bootstrap"/>
-           <SkillComponents name ="MONGODb" icon="fab fa-twitter"/>
+         
            <SkillComponents  name ="REACT" icon="fab fa-react"/>
            <SkillComponents name ="NODE js" icon="fab fa-node-js"/>
-           <SkillComponents name ="VS CODE" icon="fab fa-twitter"/>
             </div>
         </div>
     )

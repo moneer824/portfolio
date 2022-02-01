@@ -17,7 +17,7 @@ const project2 = ["fab fa-html5","fab fa-css3-alt","fab fa-js"]
       <Projects
       preview={Plural}
         title="Pluralsight clone"
-        description="Pluralsight is an online learning and workforce development platform that helps businesses and individuals adjust to changing technology. Pluralsight provide products to build tech skills and Get insights into your workflow."
+        description="In this project we have tried to manipulate dom elements, styling using css and tried to make website more dynamic and responsive.some of the functionality we have added are sign-in/sign-up, home page, user authentication, payment page,  developed data using local storage."
         arr={project1}
         github="https://github.com/aadityaneve/Clone-Pluralsight"
         website="https://aadityaneve.github.io/Clone-Pluralsight"
@@ -25,7 +25,7 @@ const project2 = ["fab fa-html5","fab fa-css3-alt","fab fa-js"]
       <Projects
       preview={Sasta}
         title="Sastasundar clone"
-        description="Sastasundhar is a Indian website where we can order medicine and Healthcare products. SastaSundar.com is an Innovative Information and Knowledge based web portal that helps people on their path to wellness."
+        description="In this project we have tried to make a look alike clone of sastasundhar.com. some of the functionality we have added are home page, payment page, slider, navbar, pop up, drop down"
         arr={project2}
         github="https://github.com/harshpagar/sastabazr"
         website="https://sastasundhar-clone.netlify.app/"

@@ -17,7 +17,7 @@ const project2 = ["fab fa-html5","fab fa-css3-alt","fab fa-js"]
       <Projects
       preview={Plural}
         title="Pluralsight clone"
-        description="In this project we have tried to manipulate dom elements, styling using css and tried to make website more dynamic and responsive.some of the functionality we have added are sign-in/sign-up, home page, user authentication, payment page,  developed data using local storage."
+        description="In this project we have tried to manipulate dom elements, styling using css and tried to make website more dynamic and responsive.some of the functionality we have added are sign-in/sign-up, home page, user authentication, payment page,  developed data using local storage and MongoDb."
         arr={project1}
         github="https://github.com/aadityaneve/Clone-Pluralsight"
         website="https://aadityaneve.github.io/Clone-Pluralsight"

@@ -25,7 +25,14 @@
 }
 .container a{
    color: black;
+   padding: 10px 20px;
+}
 
+.container li a:hover{
+    background-image: linear-gradient(-45deg,blue, skyblue);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    background-size: 200%;
 }
 .logo{
     font-size: 30px; 
@@ -48,7 +55,7 @@
 }
 
 .container ul li{
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 
@@ -68,7 +75,8 @@
         top: 60px;
         left: -50%;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
+        gap: 20px;
         width: 50%;
         background-color: white;
         height: 100vh;

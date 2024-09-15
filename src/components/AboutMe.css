@@ -94,6 +94,9 @@
     color: white;
     cursor: pointer;
 }
+.info button:hover{
+  background-image: linear-gradient(-45deg,#080808, #313131);
+}
 .info button a{
  
     color: white;

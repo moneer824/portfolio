@@ -415,7 +415,6 @@
   border-radius: 50%;
   background: linear-gradient(45deg, #ffd700, #ffb347, #ffd700);
   padding: 5px;
-  animation: ringRotate 10s linear infinite;
 }
 
 @keyframes ringRotate {

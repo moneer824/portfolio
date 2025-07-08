@@ -1,25 +1,81 @@
-import React from 'react'
-import"./NavBar.css"
+import React, { useState, useEffect } from 'react'
+import "./NavBar.css"
 
 export default function NavBar() {
-   const uncheck = ()=>{
-       document.getElementById("checker").checked = false
-     
-   }
-    return (
-        <nav className='container'>
-           <div className="logo">Moneer</div>
-           <input type="checkbox" name="" id="checker" />
-           <label htmlFor="checker">
-           <i className="fas fa-bars"></i>
-           </label>
-           <ul>
-               <li onClick={uncheck}>  <a href="#HOME"><i className="far fa-address-card"></i> Home </a></li>
-               <li onClick={uncheck}> <a href="#ABOUT"> <i className="far fa-address-card"></i>  About </a></li>
-               <li onClick={uncheck}> <a href="#SKILLS"><i className="fas fa-sitemap"></i>  Skills </a></li>
-               <li onClick={uncheck}>  <a href="#recent-work"><i className="fas fa-laptop"></i> Projects </a></li>
-               <li onClick={uncheck}> <a target="_blank" rel='noreferrer' href="https://drive.google.com/file/d/1PCcrnGgonMmAZSzq9f_Ltg57b03EpKtW/view?usp=sharing"><i className="far fa-file-alt"></i> Resume </a> </li>
-           </ul>
-        </nav>
-    )
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const [scrolled, setScrolled] = useState(false);
+
+   useEffect(() => {
+       const handleScroll = () => {
+           setScrolled(window.scrollY > 50);
+       };
+
+       window.addEventListener('scroll', handleScroll);
+       return () => window.removeEventListener('scroll', handleScroll);
+   }, []);
+
+   const toggleMenu = () => {
+       setIsMenuOpen(!isMenuOpen);
+   };
+
+   const closeMenu = () => {
+       setIsMenuOpen(false);
+   };
+
+   return (
+       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+           <div className="nav-container">
+               <div className="nav-logo">
+                   <span className="logo-text">Portfolio</span>
+                   <span className="logo-accent">.</span>
+               </div>
+               
+               <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+                   <div className="nav-links">
+                       <a href="#HOME" className="nav-link" onClick={closeMenu}>
+                           <span className="nav-icon">🏠</span>
+                           <span>Home</span>
+                       </a>
+                       <a href="#ABOUT" className="nav-link" onClick={closeMenu}>
+                           <span className="nav-icon">👨‍💻</span>
+                           <span>About</span>
+                       </a>
+                       <a href="#SKILLS" className="nav-link" onClick={closeMenu}>
+                           <span className="nav-icon">⚡</span>
+                           <span>Skills</span>
+                       </a>
+                       <a href="#recent-work" className="nav-link" onClick={closeMenu}>
+                           <span className="nav-icon">💼</span>
+                           <span>Projects</span>
+                       </a>
+                       <a href="#connect" className="nav-link" onClick={closeMenu}>
+                           <span className="nav-icon">📧</span>
+                           <span>Contact</span>
+                       </a>
+                   </div>
+                   
+                   <div className="nav-actions">
+                       <a 
+                           href="https://drive.google.com/file/d/1PCcrnGgonMmAZSzq9f_Ltg57b03EpKtW/view?usp=sharing" 
+                           target="_blank" 
+                           rel="noreferrer"
+                           className="resume-btn"
+                           onClick={closeMenu}
+                       >
+                           <span className="btn-icon">📄</span>
+                           <span>Resume</span>
+                       </a>
+                   </div>
+               </div>
+               
+               <div className="nav-toggle" onClick={toggleMenu}>
+                   <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </span>
+               </div>
+           </div>
+       </nav>
+   )
 }

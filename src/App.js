@@ -9,15 +9,13 @@ import Contact from "./components/Contact.js";
 function App() {
   return (
     <div id="HOME">
-      <div className="empty"  ></div>
-      <div>
-        <NavBar />
-        <AboutMe />
-        <MyDetails />
-        <Skills />
-        <ProjectComponents />
-        <Contact />
-      </div>
+      <NavBar />
+      <div className="nav-offset"></div>
+      <AboutMe />
+      <MyDetails />
+      <Skills />
+      <ProjectComponents />
+      <Contact />
     </div>
   );
 }

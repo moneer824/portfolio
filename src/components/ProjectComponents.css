@@ -8,3 +8,113 @@ margin-bottom: 30px;
 .all-projects{
 scroll-margin-top: 70px;
 }
+
+.projects-section {
+  padding: 5rem 0;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.projects-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.projects-header p {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-category {
+  margin-bottom: 4rem;
+}
+
+.projects-category h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-description {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 3rem 0;
+  }
+  
+  .projects-container {
+    padding: 0 1rem;
+  }
+  
+  .projects-header h2 {
+    font-size: 2rem;
+  }
+  
+  .projects-category h3 {
+    font-size: 1.5rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-header h2 {
+    font-size: 1.75rem;
+  }
+  
+  .projects-category h3 {
+    font-size: 1.25rem;
+  }
+  
+  .category-description {
+    font-size: 0.9rem;
+  }
+}

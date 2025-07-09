@@ -2,18 +2,18 @@ import React, { useEffect, useState } from "react";
 import "./AboutMe.css";
 import img from "./Myself.jpg";
 
+const words = [
+  "Frontend Engineer",
+  "React Developer", 
+  "UI/UX Enthusiast",
+  "Problem Solver",
+  "Tech Innovator"
+];
+
 export default function AboutMe() {
   const [typedText, setTypedText] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  
-  const words = [
-    "Frontend Engineer",
-    "React Developer", 
-    "UI/UX Enthusiast",
-    "Problem Solver",
-    "Tech Innovator"
-  ];
 
   useEffect(() => {
     const currentWord = words[currentWordIndex];
@@ -38,7 +38,7 @@ export default function AboutMe() {
     }, typingSpeed);
 
     return () => clearTimeout(timeout);
-  }, [typedText, currentWordIndex, isDeleting, words]);
+  }, [typedText, currentWordIndex, isDeleting]);
 
   return (
     <div className="about">
